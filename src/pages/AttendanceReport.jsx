@@ -134,7 +134,7 @@ export default function AttendanceReport() {
                   width: '32px',
                   height: '32px',
                   borderRadius: '8px',
-                  background: '#0ea5e9',
+                  background: 'var(--primary)',
                   color: '#fff',
                   display: 'flex',
                   alignItems: 'center',
@@ -237,15 +237,15 @@ export default function AttendanceReport() {
           {/* Terminal Clock & Biometric Scanner Graphic */}
           <div
             style={{
-              background: '#090e1a',
+              background: '#160414',
               borderRadius: '16px',
               padding: '24px',
-              border: '2px solid rgba(56, 189, 248, 0.3)',
+              border: '2px solid rgba(177, 156, 129, 0.4)',
               textAlign: 'center',
               boxShadow: '0 10px 25px rgba(0, 0, 0, 0.3)',
             }}
           >
-            <div style={{ fontSize: '36px', fontWeight: 800, color: '#38bdf8', letterSpacing: '0.05em', fontFamily: 'monospace' }}>
+            <div style={{ fontSize: '36px', fontWeight: 800, color: '#b19c81', letterSpacing: '0.05em', fontFamily: 'monospace' }}>
               {currentTime.toLocaleTimeString()}
             </div>
             <div style={{ fontSize: '13px', color: '#94a3b8', marginTop: '4px' }}>
@@ -257,13 +257,13 @@ export default function AttendanceReport() {
                 margin: '18px auto 0',
                 width: '180px',
                 height: '80px',
-                border: '1px dashed rgba(56, 189, 248, 0.5)',
+                border: '1px dashed rgba(177, 156, 129, 0.5)',
                 borderRadius: '12px',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 gap: '10px',
-                color: '#38bdf8',
+                color: '#e5cfb8',
                 fontSize: '12px',
                 fontWeight: 600,
               }}
@@ -283,7 +283,7 @@ export default function AttendanceReport() {
             <div className="kpi-value">{summary.total_staff || 13}</div>
             <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>Registered Employees</span>
           </div>
-          <div className="kpi-icon" style={{ background: '#eff6ff', color: '#2563eb' }}>
+          <div className="kpi-icon" style={{ background: 'var(--primary-light)', color: 'var(--primary)' }}>
             <Users size={24} />
           </div>
         </div>
@@ -396,7 +396,7 @@ export default function AttendanceReport() {
                             width: '28px',
                             height: '28px',
                             borderRadius: '8px',
-                            background: '#1e60dc',
+                            background: 'linear-gradient(135deg, #67004f, #b19c81)',
                             color: '#fff',
                             display: 'flex',
                             alignItems: 'center',

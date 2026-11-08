@@ -54,7 +54,7 @@ export default function Navbar({ activeModule, setActiveModule, onOpenNewLead, o
           className="btn btn-secondary btn-sm"
           onClick={onOpenKiosk}
           title="Face ID Attendance Kiosk"
-          style={{ borderColor: '#38bdf8', color: '#0284c7' }}
+          style={{ borderColor: 'var(--secondary)', color: 'var(--primary)' }}
         >
           <Camera size={15} />
           <span>Punch Face ID</span>
@@ -107,7 +107,7 @@ export default function Navbar({ activeModule, setActiveModule, onOpenNewLead, o
             >
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px' }}>
                 <h4 style={{ fontSize: '13px', fontWeight: 700 }}>System Notifications</h4>
-                <span style={{ fontSize: '11px', color: '#1e60dc', cursor: 'pointer' }}>Mark all read</span>
+                <span style={{ fontSize: '11px', color: 'var(--primary)', cursor: 'pointer' }}>Mark all read</span>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                 <div style={{ fontSize: '12px', padding: '8px', background: 'var(--bg-app)', borderRadius: '8px' }}>
@@ -143,7 +143,7 @@ export default function Navbar({ activeModule, setActiveModule, onOpenNewLead, o
                 width: '32px',
                 height: '32px',
                 borderRadius: '8px',
-                background: 'linear-gradient(135deg, #1e60dc, #6366f1)',
+                background: 'linear-gradient(135deg, #67004f, #b19c81)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',

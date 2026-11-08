@@ -74,7 +74,7 @@ export default function AdminSettings() {
   const [companyProfile, setCompanyProfile] = useState({
     company_name: 'Mirac International Educational Services',
     trade_name: 'Mirac International',
-    partner_firm: 'Learn With Fahad',
+    partner_firm: 'Mirac International Global',
     registration_number: 'KL-CLT-2024-ED8942',
     email: 'info@miracinternational.com',
     phone: '+91 9847098765',
@@ -388,7 +388,7 @@ export default function AdminSettings() {
                 <h4 style={{ fontSize: '14px', fontWeight: 700, margin: 0 }}>
                   Roles ({roles.length})
                 </h4>
-                <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>Scale-Up hierarchy</span>
+                <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>Mirac International hierarchy</span>
               </div>
               <button
                 className="btn btn-primary btn-sm"
@@ -461,7 +461,7 @@ export default function AdminSettings() {
             <div className="card-header">
               <div>
                 <span className="card-title">
-                  <Shield size={18} color="#1e60dc" />
+                  <Shield size={18} color="var(--primary)" />
                   Permission Matrix: {selectedRole?.name}
                   {selectedRole?.description && (
                     <span style={{ fontSize: '12px', fontWeight: 400, color: 'var(--text-muted)', marginLeft: '8px' }}>
@@ -470,7 +470,7 @@ export default function AdminSettings() {
                   )}
                 </span>
                 <p style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '2px' }}>
-                  Configure granular CRUD claims as per Scale-Up Architecture
+                  Configure granular CRUD claims as per Mirac International Architecture
                 </p>
               </div>
 
@@ -579,7 +579,7 @@ export default function AdminSettings() {
                             width: '28px',
                             height: '28px',
                             borderRadius: '8px',
-                            background: '#1e60dc',
+                            background: 'linear-gradient(135deg, #67004f, #b19c81)',
                             color: '#fff',
                             display: 'flex',
                             alignItems: 'center',
@@ -643,7 +643,7 @@ export default function AdminSettings() {
         <div className="analytics-card">
           <div className="card-header">
             <span className="card-title">
-              <Sliders size={18} color="#1e60dc" />
+              <Sliders size={18} color="var(--primary)" />
               Lead Configuration Metadata
             </span>
           </div>
@@ -734,7 +734,7 @@ export default function AdminSettings() {
           <div className="card-header">
             <div>
               <span className="card-title">
-                <Layout size={18} color="#1e60dc" />
+                <Layout size={18} color="var(--primary)" />
                 Dynamic Lead Form Layout Builder (Page 12)
               </span>
               <p style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
@@ -830,7 +830,7 @@ export default function AdminSettings() {
           <div className="card-header">
             <div>
               <span className="card-title">
-                <TableProperties size={18} color="#1e60dc" />
+                <TableProperties size={18} color="var(--primary)" />
                 Lead List Column Customization (Page 15)
               </span>
               <p style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
@@ -889,9 +889,52 @@ export default function AdminSettings() {
         <div className="analytics-card">
           <div className="card-header">
             <span className="card-title">
-              <Building size={18} color="#1e60dc" />
+              <Building size={18} color="var(--primary)" />
               Company Information (Page 16)
             </span>
+          </div>
+
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '20px',
+              padding: '16px 20px',
+              background: 'var(--bg-app)',
+              borderRadius: '12px',
+              border: '1px solid var(--border-subtle)',
+              marginBottom: '16px',
+            }}
+          >
+            <div
+              style={{
+                padding: '10px 18px',
+                background: '#ffffff',
+                borderRadius: '10px',
+                boxShadow: 'var(--shadow-sm)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}
+            >
+              <img
+                src="/mirac-logo-web.png"
+                alt="Mirac International"
+                style={{ height: '46px', maxWidth: '200px', objectFit: 'contain' }}
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = '/mirac-logo.png';
+                }}
+              />
+            </div>
+            <div>
+              <h4 style={{ fontSize: '15px', fontWeight: 800, margin: 0, color: 'var(--text-main)' }}>
+                Official Brand Identity: Mirac International
+              </h4>
+              <p style={{ fontSize: '12px', color: 'var(--text-muted)', margin: '4px 0 0' }}>
+                Colors: Deep Plum (#67004f) & Warm Sand Gold (#b19c81)
+              </p>
+            </div>
           </div>
 
           <form onSubmit={handleSaveCompany} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
@@ -992,7 +1035,7 @@ export default function AdminSettings() {
           <div className="card-header">
             <div>
               <span className="card-title">
-                <RefreshCw size={18} color="#1e60dc" />
+                <RefreshCw size={18} color="var(--primary)" />
                 Automatic Google Sheet & Meta Ingestion Sync (Page 11)
               </span>
               <p style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
@@ -1046,7 +1089,7 @@ export default function AdminSettings() {
           <div className="card-header">
             <div>
               <span className="card-title">
-                <FileCheck size={18} color="#1e60dc" />
+                <FileCheck size={18} color="var(--primary)" />
                 Auto Lead Assignment & Staff Call Cap Rules (Page 10)
               </span>
               <p style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
@@ -1177,7 +1220,7 @@ export default function AdminSettings() {
                       gap: '10px',
                     }}
                   >
-                    <KeyRound size={18} color="#1e60dc" />
+                    <KeyRound size={18} color="var(--primary)" />
                     <input
                       type="text"
                       placeholder={`Enter OTP code (${demoOtp})`}

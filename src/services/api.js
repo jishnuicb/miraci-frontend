@@ -3,7 +3,7 @@
  * Connects React Frontend to Laravel Backend API (http://127.0.0.1:8000/api)
  */
 
-const API_BASE = '/api';
+const API_BASE = import.meta.env.VITE_API_URL || '/api';
 function getAuthHeaders() {
   const token = localStorage.getItem('mirac_token');
   return {

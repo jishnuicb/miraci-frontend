@@ -158,7 +158,7 @@ export default function OperationsManual() {
             <div className="card-header">
               <div>
                 <span className="card-title">
-                  <FileText size={18} color="#1e60dc" />
+                  <FileText size={18} color="var(--primary)" />
                   Staff End-of-Day Operations Report
                 </span>
                 <p style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
@@ -365,7 +365,7 @@ export default function OperationsManual() {
           <div className="card-header">
             <div>
               <span className="card-title">
-                <CheckSquare size={18} color="#1e60dc" />
+                <CheckSquare size={18} color="var(--primary)" />
                 Daily Management Checklist (10 Operational Standard Tasks)
               </span>
               <p style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
@@ -487,7 +487,7 @@ export default function OperationsManual() {
           <div className="card-header">
             <div>
               <span className="card-title">
-                <Network size={18} color="#1e60dc" />
+                <Network size={18} color="var(--primary)" />
                 Mirac International Official Reporting Hierarchy Matrix (Page 5)
               </span>
               <p style={{ fontSize: '12px', color: 'var(--text-muted)' }}>

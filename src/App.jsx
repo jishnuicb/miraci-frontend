@@ -39,7 +39,7 @@ function MainLayout() {
           fontWeight: 600,
         }}
       >
-        Initializing Scale-Up CRM...
+        Initializing Mirac International...
       </div>
     );
   }

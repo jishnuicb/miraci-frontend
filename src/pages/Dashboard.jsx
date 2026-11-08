@@ -152,9 +152,9 @@ export default function Dashboard({ onNavigateToLeads }) {
           <div className="kpi-info">
             <h4>My Today Calls</h4>
             <div className="kpi-value">{kpis.today_calls}</div>
-            <span style={{ fontSize: '11px', color: '#2563eb', fontWeight: 600 }}>Limit: {user?.daily_call_limit || 80}</span>
+            <span style={{ fontSize: '11px', color: 'var(--primary)', fontWeight: 600 }}>Limit: {user?.daily_call_limit || 80}</span>
           </div>
-          <div className="kpi-icon" style={{ background: '#eff6ff', color: '#2563eb' }}>
+          <div className="kpi-icon" style={{ background: 'var(--primary-light)', color: 'var(--primary)' }}>
             <PhoneCall size={24} />
           </div>
         </div>
@@ -202,7 +202,7 @@ export default function Dashboard({ onNavigateToLeads }) {
         <div className="analytics-card">
           <div className="card-header">
             <span className="card-title">
-              <TrendingUp size={18} color="#1e60dc" />
+              <TrendingUp size={18} color="var(--primary)" />
               Client Status Overview
             </span>
             <div className="pill-filter">
@@ -237,14 +237,14 @@ export default function Dashboard({ onNavigateToLeads }) {
               const isAll = stageName === 'All';
               const isAdmission = stageName === 'Admission';
               const barColor = isAll
-                ? '#1e60dc'
+                ? 'var(--primary)'
                 : isAdmission
                 ? '#10b981'
                 : stageName === 'Cancel'
                 ? '#ef4444'
                 : stageName === 'Interested'
                 ? '#f59e0b'
-                : '#6366f1';
+                : 'var(--secondary)';
 
               return (
                 <div
@@ -415,7 +415,7 @@ export default function Dashboard({ onNavigateToLeads }) {
         <div className="analytics-card">
           <div className="card-header">
             <span className="card-title">
-              <PhoneCall size={18} color="#1e60dc" />
+              <PhoneCall size={18} color="var(--primary)" />
               Team Activity
             </span>
             <span style={{ fontSize: '11px', color: 'var(--text-muted)', fontWeight: 600 }}>All Departments</span>
@@ -423,7 +423,7 @@ export default function Dashboard({ onNavigateToLeads }) {
 
           <div className="team-activity-grid">
             <div className="activity-box">
-              <div style={{ width: '42px', height: '42px', borderRadius: '10px', background: '#eff6ff', color: '#1d4ed8', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <div style={{ width: '42px', height: '42px', borderRadius: '10px', background: 'var(--primary-light)', color: 'var(--primary)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <Phone size={20} />
               </div>
               <div>
@@ -514,7 +514,7 @@ export default function Dashboard({ onNavigateToLeads }) {
                         width: '34px',
                         height: '34px',
                         borderRadius: '8px',
-                        background: 'linear-gradient(135deg, #1e60dc, #6366f1)',
+                        background: 'linear-gradient(135deg, #67004f, #b19c81)',
                         color: '#fff',
                         fontWeight: 700,
                         fontSize: '13px',

@@ -481,7 +481,7 @@ export default function Leads({ newLeadModalOpen, setNewLeadModalOpen }) {
                             }}
                             title="Quick Call"
                           >
-                            <PhoneCall size={13} color="#2563eb" />
+                            <PhoneCall size={13} color="var(--primary)" />
                           </button>
                           <button
                             className="btn btn-secondary btn-sm"
@@ -708,7 +708,7 @@ export default function Leads({ newLeadModalOpen, setNewLeadModalOpen }) {
               <div>
                 <h3 style={{ fontSize: '18px', fontWeight: 800 }}>Lead Import & Distribution Wizard</h3>
                 <p style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
-                  Scale-Up CRM Automated Lead Distribution Engine (Admin Training Manual)
+                  Mirac International Automated Lead Distribution Engine (Admin Training Manual)
                 </p>
               </div>
               <button
@@ -780,7 +780,7 @@ export default function Leads({ newLeadModalOpen, setNewLeadModalOpen }) {
                       background: 'var(--bg-app)',
                     }}
                   >
-                    <FileSpreadsheet size={40} color="#1e60dc" style={{ margin: '0 auto 12px' }} />
+                    <FileSpreadsheet size={40} color="var(--primary)" style={{ margin: '0 auto 12px' }} />
                     <h4 style={{ fontSize: '15px', fontWeight: 700 }}>Select Lead Google Sheet or CSV File</h4>
                     <p style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '4px' }}>
                       Drag and drop your Meta lead export or Google Sheets webhook CSV here

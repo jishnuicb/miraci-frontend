@@ -159,7 +159,7 @@ export default function Login() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        background: 'radial-gradient(circle at 50% 20%, #1e293b 0%, #090e1a 100%)',
+        background: 'radial-gradient(circle at 50% 15%, #38022b 0%, #120110 55%, #080007 100%)',
         padding: '20px',
         color: '#f8fafc',
       }}
@@ -179,24 +179,31 @@ export default function Login() {
         <div style={{ textAlign: 'center', marginBottom: '28px' }}>
           <div
             style={{
-              width: '56px',
-              height: '56px',
-              borderRadius: '16px',
-              background: 'linear-gradient(135deg, #1e60dc, #38bdf8)',
               display: 'inline-flex',
               alignItems: 'center',
               justifyContent: 'center',
-              boxShadow: '0 8px 20px rgba(30, 96, 220, 0.4)',
-              marginBottom: '14px',
+              padding: '12px 24px',
+              borderRadius: '16px',
+              background: 'rgba(255, 255, 255, 0.96)',
+              boxShadow: '0 8px 24px rgba(0, 0, 0, 0.35)',
+              marginBottom: '16px',
             }}
           >
-            <ShieldCheck size={32} color="#ffffff" />
+            <img
+              src="/mirac-logo-web.png"
+              alt="Mirac International"
+              style={{ maxHeight: '52px', maxWidth: '240px', objectFit: 'contain' }}
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = '/mirac-logo.png';
+              }}
+            />
           </div>
           <h2 style={{ fontSize: '24px', fontWeight: 800, color: '#ffffff', letterSpacing: '-0.02em' }}>
-            Scale-Up CRM
+            Mirac International
           </h2>
-          <p style={{ fontSize: '13px', color: '#94a3b8', marginTop: '4px' }}>
-            Mirac International Educational Services
+          <p style={{ fontSize: '13px', color: '#b19c81', marginTop: '4px', fontWeight: 500 }}>
+            Admissions & Operations Management Portal
           </p>
         </div>
 
@@ -218,7 +225,7 @@ export default function Login() {
               padding: '10px 14px',
               borderRadius: '9px',
               border: 'none',
-              background: activeTab === 'password' ? '#1e60dc' : 'transparent',
+              background: activeTab === 'password' ? 'var(--primary)' : 'transparent',
               color: activeTab === 'password' ? '#ffffff' : '#94a3b8',
               fontWeight: 600,
               fontSize: '13.5px',
@@ -241,7 +248,7 @@ export default function Login() {
               padding: '10px 14px',
               borderRadius: '9px',
               border: 'none',
-              background: activeTab === 'face' ? '#1e60dc' : 'transparent',
+              background: activeTab === 'face' ? 'var(--primary)' : 'transparent',
               color: activeTab === 'face' ? '#ffffff' : '#94a3b8',
               fontWeight: 600,
               fontSize: '13.5px',
@@ -381,7 +388,8 @@ export default function Login() {
                 padding: '12px',
                 fontSize: '14px',
                 marginTop: '6px',
-                background: 'linear-gradient(135deg, #1e60dc, #2563eb)',
+                background: 'linear-gradient(135deg, #67004f, #8e006d)',
+                boxShadow: '0 4px 15px rgba(103, 0, 79, 0.4)',
               }}
             >
               {loading ? 'Authenticating...' : 'Sign In with Password'}
@@ -438,7 +446,7 @@ export default function Login() {
                   style={{
                     width: '100%',
                     height: '100%',
-                    background: 'radial-gradient(circle at center, #0f274a 0%, #030712 100%)',
+                    background: 'radial-gradient(circle at center, #2e0024 0%, #090108 100%)',
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
@@ -451,15 +459,15 @@ export default function Login() {
                       width: '130px',
                       height: '160px',
                       borderRadius: '50%',
-                      border: '2px dashed rgba(56, 189, 248, 0.5)',
+                      border: '2px dashed rgba(177, 156, 129, 0.5)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
                     }}
                   >
-                    <UserIcon size={70} color="rgba(56, 189, 248, 0.4)" />
+                    <UserIcon size={70} color="rgba(177, 156, 129, 0.4)" />
                   </div>
-                  <span style={{ fontSize: '11px', color: '#38bdf8', marginTop: '12px', fontWeight: 600 }}>
+                  <span style={{ fontSize: '11px', color: '#b19c81', marginTop: '12px', fontWeight: 600 }}>
                     {cameraError ? 'AI BIOMETRIC SIMULATOR ACTIVE' : 'INITIALIZING CAMERA...'}
                   </span>
                 </div>
@@ -479,10 +487,10 @@ export default function Login() {
                   background: 'rgba(0, 0, 0, 0.75)',
                   padding: '6px 14px',
                   borderRadius: '20px',
-                  border: '1px solid rgba(56, 189, 248, 0.4)',
+                  border: '1px solid rgba(177, 156, 129, 0.4)',
                   fontSize: '11.5px',
                   fontWeight: 600,
-                  color: '#38bdf8',
+                  color: '#e5cfb8',
                   display: 'flex',
                   alignItems: 'center',
                   gap: '6px',
@@ -547,8 +555,8 @@ export default function Login() {
                 width: '100%',
                 padding: '13px',
                 fontSize: '14.5px',
-                background: 'linear-gradient(135deg, #0ea5e9, #1e60dc)',
-                boxShadow: '0 4px 15px rgba(14, 165, 233, 0.35)',
+                background: 'linear-gradient(135deg, #67004f, #b19c81)',
+                boxShadow: '0 4px 15px rgba(103, 0, 79, 0.35)',
               }}
             >
               <Scan size={18} />
@@ -571,10 +579,10 @@ export default function Login() {
                     }}
                     style={{
                       padding: '5px 10px',
-                      background: 'rgba(14, 165, 233, 0.12)',
-                      border: '1px solid rgba(14, 165, 233, 0.3)',
+                      background: 'rgba(177, 156, 129, 0.15)',
+                      border: '1px solid rgba(177, 156, 129, 0.35)',
                       borderRadius: '6px',
-                      color: '#7dd3fc',
+                      color: '#f0e6dc',
                       fontSize: '11px',
                       fontWeight: 600,
                       cursor: 'pointer',

@@ -4,14 +4,16 @@
   --font-main: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   --font-heading: 'Outfit', sans-serif;
 
-  /* Scale-Up / Mirac Color Palette */
-  --primary: #1e60dc;
-  --primary-hover: #154fc1;
-  --primary-light: #eff5ff;
-  --primary-border: #bfdbfe;
+  /* Mirac International Official Brand Palette (Plum & Sand Gold) */
+  --primary: #67004f;
+  --primary-hover: #50003e;
+  --primary-light: #faeff7;
+  --primary-border: #e2bfdc;
 
-  --secondary: #6366f1;
-  --accent: #0ea5e9;
+  --secondary: #b19c81;
+  --secondary-hover: #9f886f;
+  --secondary-light: #f8f4ee;
+  --accent: #8a186b;
 
   /* State colors */
   --success: #10b981;
@@ -20,45 +22,45 @@
   --warning-bg: #fffbeb;
   --danger: #ef4444;
   --danger-bg: #fef2f2;
-  --info: #0284c7;
-  --info-bg: #f0f9ff;
+  --info: #67004f;
+  --info-bg: #faeff7;
 
   /* Light Theme */
-  --bg-app: #f4f7fb;
-  --bg-sidebar: #0f172a;
+  --bg-app: #fbf9fb;
+  --bg-sidebar: #170415;
   --bg-navbar: #ffffff;
   --bg-card: #ffffff;
-  --bg-card-hover: #f8fafc;
-  --text-main: #0f172a;
-  --text-muted: #64748b;
-  --text-light: #94a3b8;
-  --border-subtle: #e2e8f0;
-  --border-strong: #cbd5e1;
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.05);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.04);
-  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.06);
+  --bg-card-hover: #faf5f9;
+  --text-main: #180517;
+  --text-muted: #6b5c68;
+  --text-light: #9d8d9b;
+  --border-subtle: #efe4ec;
+  --border-strong: #d9c4d5;
+  --shadow-sm: 0 1px 2px 0 rgb(103 0 79 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(103 0 79 / 0.07), 0 2px 4px -2px rgb(103 0 79 / 0.05);
+  --shadow-lg: 0 10px 15px -3px rgb(103 0 79 / 0.08), 0 4px 6px -4px rgb(103 0 79 / 0.04);
+  --shadow-xl: 0 20px 25px -5px rgb(103 0 79 / 0.1), 0 8px 10px -6px rgb(103 0 79 / 0.06);
 
   --sidebar-width: 250px;
   --navbar-height: 64px;
 }
 
 [data-theme="dark"] {
-  --bg-app: #090e1a;
-  --bg-sidebar: #060a13;
-  --bg-navbar: #0e1626;
-  --bg-card: #111a2e;
-  --bg-card-hover: #17233c;
-  --text-main: #f1f5f9;
-  --text-muted: #94a3b8;
-  --text-light: #64748b;
-  --border-subtle: #1e293b;
-  --border-strong: #334155;
+  --bg-app: #0e020d;
+  --bg-sidebar: #0a0109;
+  --bg-navbar: #160414;
+  --bg-card: #1c051a;
+  --bg-card-hover: #260a23;
+  --text-main: #faf5f9;
+  --text-muted: #a3919f;
+  --text-light: #6e5c6a;
+  --border-subtle: #330d2f;
+  --border-strong: #4f1549;
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.4);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.5);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.6);
-  --primary-light: #172554;
-  --primary-border: #1e3a8a;
+  --primary-light: #330027;
+  --primary-border: #67004f;
 }
 
 * {
@@ -201,7 +203,7 @@ button, input, select, textarea {
 
 .search-box:focus-within {
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(30, 96, 220, 0.12);
+  box-shadow: 0 0 0 3px rgba(103, 0, 79, 0.12);
   width: 280px;
 }
 
@@ -241,14 +243,14 @@ button, input, select, textarea {
   width: 38px;
   height: 38px;
   border-radius: 10px;
-  background: linear-gradient(135deg, #2563eb, #38bdf8);
+  background: linear-gradient(135deg, #67004f, #b19c81);
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
   font-weight: 800;
   font-size: 18px;
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+  box-shadow: 0 4px 12px rgba(103, 0, 79, 0.35);
 }
 
 .brand-title {
@@ -262,8 +264,8 @@ button, input, select, textarea {
 
 .brand-subtitle {
   font-size: 10px;
-  color: #94a3b8;
-  font-weight: 500;
+  color: #b19c81;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -283,7 +285,7 @@ button, input, select, textarea {
   gap: 12px;
   padding: 10px 14px;
   border-radius: 8px;
-  color: #94a3b8;
+  color: #a3919f;
   font-size: 13.5px;
   font-weight: 500;
   cursor: pointer;
@@ -298,10 +300,11 @@ button, input, select, textarea {
 }
 
 .sidebar-item.active {
-  background: #1e60dc;
+  background: linear-gradient(135deg, #67004f, #830a67);
   color: #ffffff;
   font-weight: 600;
-  box-shadow: 0 4px 14px rgba(30, 96, 220, 0.4);
+  border-left: 3px solid #b19c81;
+  box-shadow: 0 4px 14px rgba(103, 0, 79, 0.45);
 }
 
 .sidebar-footer {
@@ -647,9 +650,9 @@ button, input, select, textarea {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  background: #eff6ff;
-  color: #1d4ed8;
-  border: 1px solid #bfdbfe;
+  background: #faeff7;
+  color: #67004f;
+  border: 1px solid #e2bfdc;
   padding: 3px 8px;
   border-radius: 20px;
   font-size: 11.5px;
@@ -659,9 +662,9 @@ button, input, select, textarea {
 }
 
 .call-badge:hover {
-  background: #2563eb;
+  background: #67004f;
   color: #ffffff;
-  border-color: #2563eb;
+  border-color: #67004f;
   transform: scale(1.05);
 }
 
@@ -710,7 +713,7 @@ button, input, select, textarea {
 
 .btn-primary:hover {
   background: var(--primary-hover);
-  box-shadow: 0 4px 12px rgba(30, 96, 220, 0.3);
+  box-shadow: 0 4px 12px rgba(103, 0, 79, 0.3);
 }
 
 .btn-secondary {
@@ -818,7 +821,7 @@ button, input, select, textarea {
 
 .form-input:focus, .form-select:focus, .form-textarea:focus {
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(30, 96, 220, 0.15);
+  box-shadow: 0 0 0 3px rgba(103, 0, 79, 0.15);
   background: var(--bg-card);
 }
 
@@ -831,12 +834,12 @@ button, input, select, textarea {
   margin: 0 auto;
   border-radius: 16px;
   overflow: hidden;
-  background: #000;
+  background: #090108;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid rgba(56, 189, 248, 0.4);
-  box-shadow: 0 0 30px rgba(14, 165, 233, 0.25);
+  border: 2px solid rgba(177, 156, 129, 0.5);
+  box-shadow: 0 0 30px rgba(103, 0, 79, 0.35);
 }
 
 .scanner-video {
@@ -848,10 +851,10 @@ button, input, select, textarea {
 .scanner-hud-reticle {
   position: absolute;
   inset: 30px;
-  border: 2px dashed rgba(56, 189, 248, 0.7);
+  border: 2px dashed rgba(177, 156, 129, 0.7);
   border-radius: 24px;
   pointer-events: none;
-  box-shadow: 0 0 15px rgba(56, 189, 248, 0.3) inset;
+  box-shadow: 0 0 15px rgba(177, 156, 129, 0.25) inset;
 }
 
 .laser-line {
@@ -859,8 +862,8 @@ button, input, select, textarea {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, transparent, #38bdf8, #60a5fa, #38bdf8, transparent);
-  box-shadow: 0 0 15px #38bdf8, 0 0 25px #60a5fa;
+  background: linear-gradient(90deg, transparent, #b19c81, #e5cfb8, #b19c81, transparent);
+  box-shadow: 0 0 15px #b19c81, 0 0 25px #d4af37;
   animation: laserScan 2.2s infinite ease-in-out;
   pointer-events: none;
 }

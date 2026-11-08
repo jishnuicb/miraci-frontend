@@ -35,14 +35,18 @@ export default function Sidebar({ activePage, setActivePage }) {
   return (
     <aside className="sidebar">
       {/* Brand Header */}
-      <div className="sidebar-brand">
-        <div className="brand-icon">
-          <GraduationCap size={22} color="#ffffff" />
-        </div>
-        <div className="brand-title">
-          <span>Scale-Up CRM</span>
-          <span className="brand-subtitle">Mirac International</span>
-        </div>
+      <div className="sidebar-brand" style={{ padding: '0 16px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <a href="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }} onClick={(e) => { e.preventDefault(); setActivePage('dashboard'); }}>
+          <img
+            src="/mirac-logo-white-web.png"
+            alt="Mirac International"
+            style={{ maxHeight: '38px', maxWidth: '210px', objectFit: 'contain' }}
+            onError={(e) => {
+              e.target.onerror = null;
+              e.target.src = '/mirac-logo.png';
+            }}
+          />
+        </a>
       </div>
 
       {/* Navigation Menu */}
@@ -66,8 +70,8 @@ export default function Sidebar({ activePage, setActivePage }) {
                     fontWeight: 800,
                     padding: '2px 6px',
                     borderRadius: '10px',
-                    background: isActive ? 'rgba(255, 255, 255, 0.25)' : 'rgba(56, 189, 248, 0.2)',
-                    color: isActive ? '#fff' : '#38bdf8',
+                    background: isActive ? 'rgba(255, 255, 255, 0.25)' : 'rgba(177, 156, 129, 0.25)',
+                    color: isActive ? '#fff' : '#b19c81',
                   }}
                 >
                   {item.badge}
@@ -82,21 +86,22 @@ export default function Sidebar({ activePage, setActivePage }) {
       <div className="sidebar-footer">
         <div
           style={{
-            background: 'rgba(255, 255, 255, 0.05)',
+            background: 'rgba(255, 255, 255, 0.04)',
+            border: '1px solid rgba(177, 156, 129, 0.2)',
             padding: '10px 12px',
             borderRadius: '8px',
             display: 'flex',
             alignItems: 'center',
-            gap: '8px',
+            gap: '10px',
           }}
         >
-          <ShieldCheck size={16} color="#10b981" />
+          <img src="/mirac-icon.png" alt="" style={{ width: '22px', height: '22px', objectFit: 'contain' }} />
           <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <span style={{ fontSize: '11px', fontWeight: 700, color: '#f8fafc' }}>
-              Learn With Fahad
+            <span style={{ fontSize: '11.5px', fontWeight: 700, color: '#f8fafc' }}>
+              Mirac International
             </span>
-            <span style={{ fontSize: '9.5px', color: '#94a3b8' }}>
-              Scale-Up CRM v2.6 Enterprise
+            <span style={{ fontSize: '9.5px', color: '#b19c81', fontWeight: 500 }}>
+              Educational Services Portal
             </span>
           </div>
         </div>
